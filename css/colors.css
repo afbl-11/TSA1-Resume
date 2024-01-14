@@ -1,0 +1,30 @@
+body {
+    background-color: rgb(42, 40, 40);
+}
+.container {
+     background-color: #FCFCFC;    
+     box-shadow: 0px 0px 2px #FCFCFC;
+}
+.container header input {
+    background-color: #020202;
+    color: #FCFCFC;
+}
+.container header input:hover {
+    background-color: #5e4d4d;
+}
+/* colors to change */
+.color1 {
+  background-color: lightblue;
+  color: black;
+}
+
+.color2 {
+  background-color: lightgreen;
+  color: black;
+}
+
+/* Default color */
+.color-default {
+  background-color: #fff;
+  color: #000;
+}

@@ -1,0 +1,70 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    width: 50rem;
+    padding: 5rem 0 5rem 0;
+    padding: 70px;
+}
+.container header {
+    display: flex;
+    border-bottom: 5px solid black;
+    justify-content: center; 
+    align-items: center; 
+    margin: auto;
+}
+.container header .user-information {
+    width:70% ;
+}
+
+.container header .ID-picture {
+    width:30%;
+}
+.container header .ID-picture img {
+    width: 210px;
+    height: 210px;
+}
+
+.container section {
+    margin:0.5rem 0 0 0;
+}
+
+.container .Academic-list{
+    list-style: none;
+    padding: 0;
+    white-space: pre;
+}
+
+.container .Skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+}
+
+.container .Skills-list li {
+  flex: 1 0 25%;
+  box-sizing: border-box;
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+.container header input {
+    position: absolute;
+    padding: 10px;
+    top: 0;
+    margin: 2rem 0 0 40rem;
+    border: none;
+    border-radius: 16px;
+}
+
+
+
+
