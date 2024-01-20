@@ -1,14 +1,38 @@
 document.addEventListener("DOMContentLoaded", function () {
-  let currentColor = 0;
-  const colors = ["lightblue", "lightgreen", "#fff"]; // Add more colors if needed
+ 
+  function getRandomColor() {
+    const letters = "0123456789ABCDEF";
+    let color = "#";
+    for (let i = 0; i < 6; i++) {
+      color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+  }
 
-  // Button click event listener
+  function changeContainerColor() {
+    const container = document.querySelector(".container");
+    container.style.backgroundColor = getRandomColor();
+  }
+
+  function changeTextColors() {
+    const textElements = document.querySelectorAll(
+      ".user-information h1, .user-information p, .Objective h3, .Objective pre, .Background h3, .Background ul li strong, .Background ul li span, .Skills h3, .Skills-list li"
+    );
+
+    textElements.forEach(function (element) {
+      element.style.color = getRandomColor();
+    });
+  }
+
+  function changeButtonColor() {
+    const button = document.getElementById("colorButton");
+    button.style.backgroundColor = getRandomColor();
+    button.style.color = getRandomColor();
+  }
+
   document.getElementById("colorButton").addEventListener("click", function () {
-    // Increment the color index
-    currentColor = (currentColor + 1) % colors.length;
-
-    // Apply the new color style to the container
-    document.querySelector(".container").style.backgroundColor =
-      colors[currentColor];
+    changeContainerColor();
+    changeTextColors();
+    changeButtonColor();
   });
 });
